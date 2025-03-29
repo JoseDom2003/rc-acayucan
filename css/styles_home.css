@@ -1,0 +1,59 @@
+body {
+    background-image: url('../imagenes/fondo.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  } 
+
+  /* Estilo base del botón */
+  .btn-custom {
+    background-color: transparent;
+    border: 2px solid #611232 !important; /* Asegura que el borde se aplique */
+    color: #611232;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Estilo al pasar el cursor */
+  .btn-custom:hover {
+    background-color: #611232;
+    color: white;
+    border-color: #611232 !important; /* Refuerza el borde en el hover */
+  }
+
+/* Estilo base para el navbar */
+.custom-navbar {
+    background-color: #611232 !important; /* Color de fondo */
+    color: white;
+    margin-bottom: 200px;
+}
+
+.custom-navbar .dropdown-menu{
+    overflow: hidden;
+}
+
+.btn-cerrar {
+    background-color: #611232; /* Verde claro */
+    border: none;
+}
+
+.col-custom{
+    transition: transform 0.3s;
+    padding-bottom: 50px;
+}
+
+.col-custom:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+  /* Añadir estas nuevas reglas */
+  @media (max-width: 768px) {
+    .custom-navbar {
+        background-color: #611232 !important; /* Color de fondo */
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    /* Eliminar desplazamiento y compensar scrollbar */
+    body.modal-open {
+        overflow: hidden;
+    }
+}

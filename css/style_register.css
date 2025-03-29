@@ -1,0 +1,48 @@
+body {
+    background-image: url('../imagenes/fondo.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  } 
+
+  /* Estilo base del botón */
+  .btn-custom {
+    background-color: transparent;
+    border: 2px solid #611232 !important; /* Asegura que el borde se aplique */
+    color: #611232;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Estilo al pasar el cursor */
+  .btn-custom:hover {
+    background-color: #611232;
+    color: white !important;
+    border-color: #611232 !important; /* Refuerza el borde en el hover */
+  }
+
+/* Estilo base para el navbar */
+.custom-navbar {
+    background-color: #611232 !important; /* Color de fondo */
+    color: white;
+    margin-bottom: 25px;
+}
+
+.custom-navbar .dropdown-menu{
+    overflow: hidden;
+}
+
+.btn-cerrar {
+    background-color: #611232; /* Verde claro */
+    border: none;
+}
+
+.card-custom{
+    width: 50%;
+}
+
+  /* Añadir estas nuevas reglas */
+  @media (max-width: 768px) {
+    .card-custom {
+        border-radius: 10px;
+        width: 100% !important;
+    }
+}

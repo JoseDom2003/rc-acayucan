@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: auto;
+    font-family: Arial, sans-serif;
+  }
+
+  .top-page {
+    position: fixed; /* Fijar el contenedor de las imágenes */
+    top: 2%; /* Posición en la parte superior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar el centrado */
+    display: flex; /* Usar flexbox para las imágenes */
+    justify-content: space-around; /* Espaciado entre las imágenes */
+    width: 150%; /* Ancho completo */
+    z-index: 10; /* Asegurarse de que esté sobre otros elementos */
+    padding: 15px;
+  }
+
+  .top-page img {
+    max-height: 120px; /* Ajusta la altura máxima de las imágenes */
+    margin: 0 10px; /* Espacio entre las imágenes */
+    padding-left: 20px;
+  }
+
+  .tittle {
+    position: fixed; /* Fijar el título */
+    top: 12%; /* Ajusta esto según la altura de las imágenes */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar el centrado */
+    z-index: 9; /* Asegurarse de que esté debajo de las imágenes */
+    text-align: center; /* Centrar el texto */
+    color: black; /* Cambia el color según lo que necesites */
+    font-size: 24px; /* Ajusta el tamaño de la fuente según lo que necesites */
+  } 
+
+  .custom-header {
+    text-align: center; /* Centrar el texto horizontalmente */
+    background-color: #A57F2C !important;
+    color: white;
+  }
+ 
+  .container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 5; /* Asegurarse de que esté debajo de las imágenes */
+  }
+  
+  .login-box {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
+
+    /* Añadir margen inferior a los inputs */
+  .form-floating {
+    margin-bottom: 15px; /* Ajusta el valor según lo que necesites */
+    align-items: start;
+  }
+
+   /* Estilo base del botón */
+   .btn-custom {
+    background-color: transparent;
+    border: 2px solid #611232 !important; /* Asegura que el borde se aplique */
+    color: #611232;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Estilo al pasar el cursor */
+  .btn-custom:hover {
+    background-color: #611232;
+    color: white !important;
+    border-color: #611232 !important; /* Refuerza el borde en el hover */
+  }
+
+  /* Añadir estas nuevas reglas */
+@media (max-width: 768px) {
+  .login-box {
+      width: 90%;
+      max-width: 400px;
+  }
+  
+  .top-page img {
+      max-height: 80px;
+      margin: 0 5px;
+  }
+  
+  body {
+      background-position: center; /* Corregir valor inválido */
+      background-attachment: fixed; /* Evitar movimiento de fondo */
+      overflow: hidden;
+  }
+}
