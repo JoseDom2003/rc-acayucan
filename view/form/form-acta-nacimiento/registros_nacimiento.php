@@ -114,7 +114,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
-          <iframe id="pdfIframe" src="C:\xampp\htdocs\registro-actas\storage\pdfs_nacimiento\" frameborder="0" style="width: 100%; height: 75vh;"></iframe>
+          <iframe id="pdfIframe" src="../../../storage/pdfs_nacimiento/" frameborder="0" style="width: 100%; height: 75vh;"></iframe>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var button = event.relatedTarget;
     var file = button.getAttribute("data-file");
     // Se asume que los archivos PDF están en la carpeta "../../../storage/"
-    var fullPath = "C:\xampp\htdocs\registro-actas\storage\pdfs_nacimiento" + file;
+    var fullPath = "../../../storage/pdfs_nacimiento/" + file;
     document.getElementById("pdfIframe").src = fullPath;
   });
   pdfModal.addEventListener("hidden.bs.modal", function () {
