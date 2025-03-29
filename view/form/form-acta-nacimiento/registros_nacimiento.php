@@ -114,7 +114,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
-          <iframe id="pdfIframe" src="registro-actas/storage/pdfs_nacimiento/" frameborder="0" style="width: 100%; height: 75vh;"></iframe>
+          <iframe id="pdfIframe" src="
+https://x67hc9j1-3000.usw3.devtunnels.ms/view/form/form-acta-nacimiento/registro-actas/storage/pdfs_nacimiento/" frameborder="0" style="width: 100%; height: 75vh;"></iframe>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
