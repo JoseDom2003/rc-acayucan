@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var button = event.relatedTarget;
     var file = button.getAttribute("data-file");
     // Se asume que los archivos PDF están en la carpeta "../../../storage/"
-    var fullPath = "../../../storage/pdfs_nacimiento/" + file;
+    var fullPath = "C:\xampp\htdocs\registro-actas\storage\pdfs_nacimiento" + file;
     document.getElementById("pdfIframe").src = fullPath;
   });
   pdfModal.addEventListener("hidden.bs.modal", function () {
