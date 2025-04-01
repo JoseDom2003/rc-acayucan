@@ -2,7 +2,6 @@ let table = new DataTable('#myTable', {
     columnDefs: [
         { className: "dt-center", targets: "_all" }
     ],
-    
     responsive: true,
     layout:{
 
