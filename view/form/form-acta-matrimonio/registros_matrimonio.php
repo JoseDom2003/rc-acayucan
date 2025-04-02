@@ -133,14 +133,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <!-- CDN PARA LA PAGINA -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
 <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+<script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.js"></script>
+<script src="https://cdn.datatables.net/responsive/3.0.4/js/responsive.bootstrap5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- ARCHIVOS JS PARA SWEET ALERT -->
-<script src="../../../js/script_nacimiento.js"></script>
+<script>
+    const table = new DataTable('#myTable', {
+        responsive: true,
+        fixedHeader: true,
+        columnDefs: [
+            { responsivePriority: 1, targets: 4 },
+            { responsivePriority: 2, targets: 0 },
+            { responsivePriority: 3, targets: 7 },
+            { className: "dt-center", targets: "_all" }
+        ],
+        layout: {
+            topStart: {
+                pageLength: {
+                    menu: [10, 20, 30, 40, 50]
+                }
+            },
+            bottomStart: {
+                paging: {
+                    numbers: 10
+                }
+            },
+            topEnd: {},
+            bottomEnd: {}
+        },
+        language: {
+            url: "https://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json",
+            entries: {
+                _: 'Actas',
+                1: 'Acta'
+            }
+        }
+    });
+
+</script>
 <script src="../../../js/eliminar_sweetalert.js"></script>
 <script src="../../../js/alert_registro.js"></script>
 <script src="../../../js/editar_registro.js"></script>

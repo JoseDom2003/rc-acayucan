@@ -38,6 +38,7 @@ body {
 .col-custom{
     transition: transform 0.3s;
     padding-bottom: 50px;
+    padding: 20px;
 }
 
 .col-custom:hover {

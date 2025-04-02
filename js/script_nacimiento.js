@@ -1,37 +1,58 @@
-let table = new DataTable('#myTable', {
-    columnDefs: [
-        { className: "dt-center", targets: "_all" }
-    ],
-    responsive: true,
-    layout:{
-
-        topStart: {
-            pageLength: {
-                menu: [10,20,30,40,50]
-            }
+document.addEventListener("DOMContentLoaded", function() {
+    // Inicializa la tabla con DataTables
+    const table = new DataTable('#myTable', {
+        responsive: true,
+        fixedHeader: true,
+        columnDefs: [
+            { responsivePriority: 1, targets: 5 },
+            { responsivePriority: 2, targets: 0 },
+            { responsivePriority: 3, targets: 11 },
+            { className: "dt-center", targets: "_all" }
+        ],
+        layout: {
+            topStart: {
+                pageLength: {
+                    menu: [10, 20, 30, 40, 50]
+                }
+            },
+            bottomStart: {
+                paging: {
+                    numbers: 10
+                }
+            },
+            topEnd: {},
+            bottomEnd: {}
         },
-        
-        bottomStart: {
-            paging: {
-                numbers: 10
+        language: {
+            url: "https://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json",
+            entries: {
+                _: 'Actas',
+                1: 'Acta'
             }
-        },
-
-        topEnd: {
-            search: {
-                placeholder: 'Inserta un campo'
-            }
-        },
-
-        bottomEnd: {
-            
         }
-    },
-    language: {
-        url: "https://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json",
-        entries: {
-            _: 'Actas',
-            1: 'Acta'
+    });
+
+    // --- Creación de una fila extra en el thead para filtros individuales ---
+    const thead = document.querySelector('#myTable thead');
+    const filterRow = document.createElement('tr');
+    thead.appendChild(filterRow);
+
+    // Especifica los índices de las columnas donde deseas agregar inputs de búsqueda
+    const columnasConFiltro = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    // Por cada columna en el encabezado original, crea una celda en la fila de filtros
+    thead.querySelectorAll('tr:first-child th').forEach((th, i) => {
+        const filterCell = document.createElement('th');
+        if (columnasConFiltro.includes(i)) {
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.className = 'form-control d-none d-md-inline'; // Ocultar en dispositivos pequeños
+            input.placeholder = 'Buscar...';
+            input.addEventListener('input', function() {
+                table.column(i).search(this.value).draw();
+            });
+            filterCell.appendChild(input);
         }
-    }
+        filterRow.appendChild(filterCell);
+    });
 });

@@ -40,17 +40,17 @@
     
             <div class="col-lg-4 col-12 text-center col-custom">
                 <img src="../imagenes/insert.png" alt="Placeholder" width="100" height="100">
-                <h2 class="fw-normal">Insertar actas</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quam earum perspiciatis inventore nihil, dolores provident. Perspiciatis numquam 
-                    dolores, aperiam nemo suscipit tempora cum autem sunt repudiandae sit. Delectus, laboriosam?</p>
+                <h2 class="fw-normal">ADMINISTRAR ACTAS</h2>
+                <p>Este módulo permite gestionar actas de manera eficiente, ofreciendo funciones para insertar nuevas actas, 
+                    editar las existentes y eliminarlas según sea necesario.​</p>
                 <p><a class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar &raquo;</a></p>
             </div>
 
             <div class="col-lg-4 col-12 text-center col-custom">
                 <img src="../imagenes/busqueda.png" alt="Placeholder" width="100" height="100">
-                <h2 class="fw-normal">Busqueda de actas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet praesentium animi dolorum consectetur rerum quibusdam eius inventore sapiente 
-                    quis adipisci qui ut, voluptates libero quasi dolores assumenda eum reiciendis fugit.</p>
+                <h2 class="fw-normal">BUSQUEDA DE ACTAS</h2>
+                <p>Proporciona herramientas avanzadas para localizar actas específicas utilizando diversos filtros, 
+                    facilitando la consulta rápida y precisa de la información requerida.</p>
                 <p><a class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal2">Ingresar &raquo;</a></p>
             </div>
         </div>
@@ -66,9 +66,9 @@
                 </div>
 
                 <div class="modal-body">
-                    <a type="button" class="btn btn-custom w-100 mb-3" href="./form/form-acta-nacimiento/form_nacimiento.php">Acta de Nacimiento</a>
-                    <a type="button" class="btn btn-custom w-100 mb-3" href="./form/form-acta-defuncion/form_defuncion.php">Acta de Defunción</a>
-                    <a type="button" class="btn btn-custom w-100" href="./form/form-acta-matrimonio/form_matrimonio.php">Acta de Matrimonio</a>
+                    <a type="button" class="btn btn-custom w-100 mb-3" href="./form/form-acta-nacimiento/registros_nacimiento.php">Acta de Nacimiento</a>
+                    <a type="button" class="btn btn-custom w-100 mb-3" href="./form/form-acta-defuncion/registros_defuncion.php">Acta de Defunción</a>
+                    <a type="button" class="btn btn-custom w-100" href="./form/form-acta-matrimonio/registros_matrimonio.php">Acta de Matrimonio</a>
                 </div>
 
                 <div class="modal-footer">
@@ -90,9 +90,9 @@
                 </div>
 
                 <div class="modal-body">
-                    <a type="button" class="btn btn-custom w-100 mb-3" href="../view/form/form-acta-nacimiento/registros_nacimiento.php">Acta de Nacimiento</a>
-                    <a type="button" class="btn btn-custom w-100 mb-3" href="../view/form/form-acta-defuncion/registros_defuncion.php">Acta de Defunción</a>
-                    <a type="button" class="btn btn-custom w-100" href="../view/form/form-acta-matrimonio/registros_matrimonio.php">Acta de Matrimonio</a>
+                    <a type="button" class="btn btn-custom w-100 mb-3" href="../view/form/form-acta-nacimiento/busqueda_acta.php">Acta de Nacimiento</a>
+                    <a type="button" class="btn btn-custom w-100 mb-3" href="../view/form/form-acta-defuncion/busqueda_acta.php">Acta de Defunción</a>
+                    <a type="button" class="btn btn-custom w-100" href="../view/form/form-acta-matrimonio/busqueda_acta.php">Acta de Matrimonio</a>
                 </div>
 
                 <div class="modal-footer">

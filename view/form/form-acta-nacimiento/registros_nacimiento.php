@@ -6,10 +6,10 @@
     <title>Document</title>
     <link rel="icon" href="../../../imagenes/logo_blanco.svg" >
     <link rel="stylesheet" href="../../../css/style_register.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.4/css/responsive.bootstrap5.css">
 </head>
 
 <header>
@@ -41,13 +41,13 @@
         <h1 class="text-center">REGISTRO ACTAS</h1>
     </div>
 <br>
-    <div class="container-table p-3 table-responsive">
+    <div class="container-table p-3">
 
         <div class="container-agregar pb-2">
             <a href="form_nacimiento.php" class="btn btn-success"><img src="../../../imagenes/imagen_agregar.png" alt="" width="35px" height="26px" style="padding-right: 10px;">AGREGAR REGISTRO</a>
         </div>
 
-        <table class="table table-bordered table-striped table-hover" id="myTable"> 
+        <table class="table table-bordered table-striped table-hover responsive" id="myTable"> 
             <thead class="table-secondary">
                 <tr class="text-center">
                     <th scope="col">TIPO DE ACTA</th>
@@ -95,8 +95,7 @@
                         </button>
                     </td>  
                     <th>           
-                        <a href="form_editar_acta.php?id=<?php echo $resultado['id_acta'];?>" class="btn btn-warning"><img src="../../../imagenes/imagen_editar.png" alt="" width="30px" height="20px" style="padding-right: 5px;">EDITAR</a>
-                        <br><br>
+                        <a href="form_editar_acta.php?id=<?php echo $resultado['id_acta'];?>" class="btn btn-warning me-2"><img src="../../../imagenes/imagen_editar.png" alt="" width="30px" height="20px">EDITAR</a>
                         <a href="../../../controladores/acta_nacimiento/eliminar_acta.php?id=<?php echo $resultado['id_acta'];?>" class="btn btn-danger btn-eliminar"><img src="../../../imagenes/imagen_borrar.png" alt="" width="20px" height="20px">ELIMINAR</a>
                     </th>
                 </tr>
@@ -142,15 +141,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <!-- CDN PARA LA PAGINA -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
 <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+<script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.js"></script>
+<script src="https://cdn.datatables.net/responsive/3.0.4/js/responsive.bootstrap5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- ARCHIVOS JS PARA SWEET ALERT -->
-<script src="../../../js/script_nacimiento.js"></script>
+<script>
+    const table = new DataTable('#myTable', {
+        responsive: true,
+        fixedHeader: true,
+        columnDefs: [
+            { responsivePriority: 1, targets: 5 },
+            { responsivePriority: 2, targets: 0 },
+            { responsivePriority: 3, targets: 11 },
+            { className: "dt-center", targets: "_all" }
+        ],
+        layout: {
+            topStart: {
+                pageLength: {
+                    menu: [10, 20, 30, 40, 50]
+                }
+            },
+            bottomStart: {
+                paging: {
+                    numbers: 10
+                }
+            },
+            topEnd: {},
+            bottomEnd: {}
+        },
+        language: {
+            url: "https://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json",
+            entries: {
+                _: 'Actas',
+                1: 'Acta'
+            }
+        }
+    });
+
+</script>
 <script src="../../../js/eliminar_sweetalert.js"></script>
 <script src="../../../js/alert_registro.js"></script>
 <script src="../../../js/editar_registro.js"></script>
