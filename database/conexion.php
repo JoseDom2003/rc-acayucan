@@ -7,6 +7,7 @@ $database = "db_rc-acayucan";
 
 $conexion = new mysqli($host, $user, $password, $database);
 
-if (!$conexion) {
-    echo 'conexion falllida';
-}
+    if ($conexion->connect_error) {
+        die("La conexión ha fallado: " . $conexion->connect_error);
+    }
+?>

@@ -34,16 +34,20 @@
             <div class="card-body">
                 <form action="" method="post" id="login-form">
                     <div class="form-floating">
-                        <input type="text" class="form-control" placeholder="name@example.com" name="usuario" id="floatingInput" />
+                        <input type="text" class="form-control" placeholder="name@example.com" name="username" id="floatingInput" />
                         <label for="floatingInput">Ingresa tu usuario</label>
                     </div>
 
                     <div class="form-floating">
-                        <input type="password" class="form-control" placeholder="Password" name="contraseña" id="floatingPassword" />
+                        <input type="password" class="form-control" placeholder="Password" name="password" id="floatingPassword" />
                         <label for="floatingPassword">Ingresa tu contraseña</label>
                     </div>
     
-                    <a href="./view/home.php" class="btn btn-custom">Ingresar</a>
+                    <a href="./view/home.php" class="btn btn-custom mb-3">Ingresar</a>
+
+                    <div class="card-footer text-center text-muted">
+                        <small>No tienes una cuenta <a href="/login/form_login.php" style="color: #611232;">Crea una aqui</a></small>
+                    </div>
                 </form>
             </div>
         </div>

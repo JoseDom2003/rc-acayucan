@@ -1,11 +1,8 @@
 body {
-    margin: 0;
-    padding: 0;
     background-image: url('../imagenes/fondo.jpg');
     background-size: cover;
-    background-position: auto;
     font-family: Arial, sans-serif;
-  }
+  } 
 
   .top-page {
     position: absolute; /* Fijar el contenedor de las imágenes */
@@ -25,47 +22,37 @@ body {
     height: auto
   }
 
-
   .tittle {
-    position: fixed; /* Fijar el título */
-    top: 12%; /* Ajusta esto según la altura de las imágenes */
+    position: absolute; /* Fijar el título */
+    top: 10%; /* Ajusta esto según la altura de las imágenes */
     left: 50%; /* Centrar horizontalmente */
     transform: translateX(-50%); /* Ajustar el centrado */
     z-index: 9; /* Asegurarse de que esté debajo de las imágenes */
     text-align: center; /* Centrar el texto */
     color: black; /* Cambia el color según lo que necesites */
     font-size: 24px; /* Ajusta el tamaño de la fuente según lo que necesites */
+    margin-bottom: 5px;
   } 
 
-  .custom-header {
-    text-align: center; /* Centrar el texto horizontalmente */
-    background-color: #A57F2C !important;
-    color: white;
-  }
- 
-  .container-login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    z-index: 5; /* Asegurarse de que esté debajo de las imágenes */
-  }
-  
-  .login-box {
-    width: 400px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-  }
+.card {
+    border-radius: 15px;
+    margin-top: 180px;
+    margin-bottom: 20px;
+}
 
-    /* Añadir margen inferior a los inputs */
-  .form-floating {
-    margin-bottom: 15px; /* Ajusta el valor según lo que necesites */
-    align-items: start;
-  }
+.card-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #611232;
+}
 
-   /* Estilo base del botón */
-   .btn-custom {
+.card-footer {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+  /* Estilo base del botón */
+  .btn-custom {
     background-color: transparent;
     border: 2px solid #611232 !important; /* Asegura que el borde se aplique */
     color: #611232;
@@ -78,22 +65,3 @@ body {
     color: white !important;
     border-color: #611232 !important; /* Refuerza el borde en el hover */
   }
-
-  /* Añadir estas nuevas reglas */
-@media (max-width: 768px) {
-  .login-box {
-      width: 90%;
-      max-width: 400px;
-  }
-  
-  .top-page img {
-      max-height: 80px;
-      margin: 0 5px;
-  }
-  
-  body {
-      background-position: center; /* Corregir valor inválido */
-      background-attachment: fixed; /* Evitar movimiento de fondo */
-      overflow: hidden;
-  }
-}
