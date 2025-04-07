@@ -59,52 +59,52 @@
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="num_libro" class="form-label">NUMERO DE LIBRO</label>
-                    <input type="text" class="form-control" name="num_libro" id="num_libro" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="num_libro" id="num_libro" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="num_acta" class="form-label">NUMERO DE ACTA</label>
-                    <input type="text" class="form-control" name="num_acta" id="num_acta" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="num_acta" id="num_acta" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="fecha_registro" class="form-label">FECHA DE REGISTRO</label>
-                    <input type="date" class="form-control" name="fecha_registro" id="fecha_registro" aria-describedby="helpId" placeholder=""/>
+                    <input type="date" class="form-control" name="fecha_registro" id="fecha_registro" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="curp" class="form-label">CURP</label>
-                    <input type="text" class="form-control" name="curp" id="curp" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="curp" id="curp" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="nombre" class="form-label">NOMBRE</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="paterno" class="form-label">PATERNO</label>
-                    <input type="text" class="form-control" name="paterno" id="paterno" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="paterno" id="paterno" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="materno" class="form-label">MATERNO</label>
-                    <input type="text" class="form-control" name="materno" id="materno" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="materno" id="materno" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="fecha_nacimiento" class="form-label">FECHA DE NACIMIENTO</label>
-                    <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" aria-describedby="helpId" placeholder="Colocar el nombre de ambos padres"/>
+                    <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" aria-describedby="helpId" placeholder="Colocar el nombre de ambos padres" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="lugar_nacimiento" class="form-label">LUGAR DE NACIMIENTO</label>
-                    <input type="text" class="form-control" name="lugar_nacimiento" id="lugar_nacimiento" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="lugar_nacimiento" id="lugar_nacimiento" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="nombre_padres" class="form-label">NOMBRE PADRE(S)</label>
-                    <input type="text" class="form-control" name="nombre_padres" id="nombre_padres" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="nombre_padres" id="nombre_padres" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">

@@ -95,7 +95,7 @@
                         </button>
                     </td>  
                     <th>           
-                        <a href="form_editar_acta.php?id=<?php echo $resultado['id_acta'];?>" class="btn btn-warning me-2"><img src="../../../imagenes/imagen_editar.png" alt="" width="30px" height="20px">EDITAR</a>
+                        <a href="form_editar_acta.php?id=<?php echo $resultado['id_acta'];?>" class="btn btn-warning"><img src="../../../imagenes/imagen_editar.png" alt="" width="30px" height="20px">EDITAR</a>
                         <a href="../../../controladores/acta_nacimiento/eliminar_acta.php?id=<?php echo $resultado['id_acta'];?>" class="btn btn-danger btn-eliminar"><img src="../../../imagenes/imagen_borrar.png" alt="" width="20px" height="20px">ELIMINAR</a>
                     </th>
                 </tr>

@@ -46,7 +46,7 @@
                     <a href="./view/home.php" class="btn btn-custom mb-3">Ingresar</a>
 
                     <div class="card-footer text-center text-muted">
-                        <small>No tienes una cuenta <a href="/login/form_login.php" style="color: #611232;">Crea una aqui</a></small>
+                        <small>No tienes una cuenta <a href="./login/form_login.php" style="color: #611232;">Crea una aqui</a></small>
                     </div>
                 </form>
             </div>

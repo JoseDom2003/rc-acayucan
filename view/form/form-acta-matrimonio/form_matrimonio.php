@@ -57,32 +57,32 @@
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="num_libro" class="form-label">NUMERO DE LIBRO</label>
-                    <input type="text" class="form-control" name="num_libro" id="num_libro" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="num_libro" id="num_libro" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="num_acta" class="form-label">NUMERO DE ACTA</label>
-                    <input type="text" class="form-control" name="num_acta" id="num_acta" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="num_acta" id="num_acta" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="fecha_registro" class="form-label">FECHA DE REGISTRO</label>
-                    <input type="date" class="form-control" name="fecha_registro" id="fecha_registro" aria-describedby="helpId" placeholder=""/>
+                    <input type="date" class="form-control" name="fecha_registro" id="fecha_registro" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="contrayente_masc" class="form-label">ESPOSO</label>
-                    <input type="text" class="form-control" name="contrayente_masc" id="contrayente_masc" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="contrayente_masc" id="contrayente_masc" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="contrayente_fem" class="form-label">ESPOSA</label>
-                    <input type="text" class="form-control" name="contrayente_fem" id="contrayente_fem" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="contrayente_fem" id="contrayente_fem" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="regimen" class="form-label">REGIMEN</label>
-                        <select class="form-select" id="regimen" name="regimen">
+                        <select class="form-select" id="regimen" name="regimen" required>
                             <option value="sociedad conyugal">SOCIEDAD CONYUGAL</option>
                             <option value="separacion de bienes">SEPARACION DE BIENES</option>
                         </select>
