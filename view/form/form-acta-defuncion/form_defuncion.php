@@ -59,37 +59,37 @@
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="num_libro" class="form-label">NUMERO DE LIBRO</label>
-                    <input type="text" class="form-control" name="num_libro" id="num_libro" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="num_libro" id="num_libro" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="num_acta" class="form-label">NUMERO DE ACTA</label>
-                    <input type="text" class="form-control" name="num_acta" id="num_acta" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="num_acta" id="num_acta" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="fecha_registro" class="form-label">FECHA DE REGISTRO</label>
-                    <input type="date" class="form-control" name="fecha_registro" id="fecha_registro" aria-describedby="helpId" placeholder=""/>
+                    <input type="date" class="form-control" name="fecha_registro" id="fecha_registro" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="nombre_difunto" class="form-label">NOMBRE DIFUNTO</label>
-                    <input type="text" class="form-control" name="nombre_difunto" id="nombre_difunto" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="nombre_difunto" id="nombre_difunto" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="hora_defuncion" class="form-label">HORA DEFUNCION</label>
-                    <input type="time" class="form-control" name="hora_defuncion" id="hora_defuncion" aria-describedby="helpId" placeholder=""/>
+                    <input type="time" class="form-control" name="hora_defuncion" id="hora_defuncion" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="fecha_defuncion" class="form-label">FECHA DEFUNCION</label>
-                    <input type="date" class="form-control" name="fecha_defuncion" id="fecha_defuncion" aria-describedby="helpId" placeholder=""/>
+                    <input type="date" class="form-control" name="fecha_defuncion" id="fecha_defuncion" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="lugar_defuncion" class="form-label">LUGAR DEFUNCION</label>
-                    <input type="text" class="form-control" name="lugar_defuncion" id="lugar_defuncion" aria-describedby="helpId" placeholder=""/>
+                    <input type="text" class="form-control" name="lugar_defuncion" id="lugar_defuncion" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="form-group mb-3 d-flex flex-column">
