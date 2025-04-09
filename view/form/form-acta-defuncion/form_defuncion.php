@@ -94,7 +94,7 @@
 
                 <div class="form-group mb-3 d-flex flex-column">
                     <label for="acta_digital" class="form-label">ARCHIVO_ACTA</label>
-                    <input type="file" class="form-control" name="acta_digital" id="acta_digital" aria-describedby="helpId" placeholder=""/>
+                    <input type="file" class="form-control" name="acta_digital" id="acta_digital" aria-describedby="helpId" placeholder="" required/>
                 </div>
 
                 <div class="card-footer">
