@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
             { responsivePriority: 1, targets: 5 },
             { responsivePriority: 2, targets: 0 },
             { responsivePriority: 3, targets: 11 },
-            { className: "dt-center", targets: "_all" }
+            { className: "dt-center", targets: "_all" },
+            {targets: [0,1,2,3,4,5,6,7,8,9,10,11], orderable: false}
         ],
         layout: {
             topStart: {

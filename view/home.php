@@ -68,7 +68,8 @@
                 <div class="modal-body">
                     <a type="button" class="btn btn-custom w-100 mb-3" href="./form/form-acta-nacimiento/registros_nacimiento.php">Acta de Nacimiento</a>
                     <a type="button" class="btn btn-custom w-100 mb-3" href="./form/form-acta-defuncion/registros_defuncion.php">Acta de Defunción</a>
-                    <a type="button" class="btn btn-custom w-100" href="./form/form-acta-matrimonio/registros_matrimonio.php">Acta de Matrimonio</a>
+                    <a type="button" class="btn btn-custom w-100 mb-3" href="./form/form-acta-matrimonio/registros_matrimonio.php">Acta de Matrimonio</a>
+                    <a type="button" class="btn btn-custom w-100" href="./form/form-acta-divorcio/registros_divorcio.php">Acta de Divorcio</a>
                 </div>
 
                 <div class="modal-footer">
@@ -92,7 +93,8 @@
                 <div class="modal-body">
                     <a type="button" class="btn btn-custom w-100 mb-3" href="../view/form/form-acta-nacimiento/busqueda_acta.php">Acta de Nacimiento</a>
                     <a type="button" class="btn btn-custom w-100 mb-3" href="../view/form/form-acta-defuncion/busqueda_acta.php">Acta de Defunción</a>
-                    <a type="button" class="btn btn-custom w-100" href="../view/form/form-acta-matrimonio/busqueda_acta.php">Acta de Matrimonio</a>
+                    <a type="button" class="btn btn-custom w-100 mb-3" href="../view/form/form-acta-matrimonio/busqueda_acta.php">Acta de Matrimonio</a>
+                    <a type="button" class="btn btn-custom w-100" href="../view/form/form-acta-divorcio/busqueda_acta.php">Acta de Divorcio</a>
                 </div>
 
                 <div class="modal-footer">

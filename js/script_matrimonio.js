@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
         responsive: true,
         fixedHeader: true,
         columnDefs: [
-            { responsivePriority: 1, targets: 5 },
+            { responsivePriority: 1, targets: 4 },
             { responsivePriority: 2, targets: 0 },
-            { responsivePriority: 3, targets: 11 },
-            { className: "dt-center", targets: "_all" }
+            { responsivePriority: 3, targets: 7 },
+            { className: "dt-center", targets: "_all" },
+            {targets: [0,1,2,3,4,5,6,7], orderable: false}
         ],
         layout: {
             topStart: {
